@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+    	<!-- <base href="./"> -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<meta name="description" content="DocNet v2.0">
+		<meta name="author" content="Paul Osman">
+		<link rel="icon" href="assets/icons/cloud-icon.png">
+
+		<title>DOCNET</title>
+
+		<!-- fa Icons -->
+		<!-- <link href="assets/fontawesome-free-5.4.1-web/css/all.css" rel="stylesheet"> -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		
+		<!-- Main styles for this application-->
+		<!-- <link href="css_min/min_style.css" rel="stylesheet"> -->
+		<link href="css_local/css/style.css" rel="stylesheet">
+		<!-- <link href="css_min/pace.min.css" rel="stylesheet"> -->
+		<link href="css_local/css/pace.min.css" rel="stylesheet">
+		<!-- <link href="css_min/min_docnet_custom.css" rel="stylesheet"> -->
+		<link href="css_local/docnet_custom.css" rel="stylesheet">
+  </head>
+
+<!-- Navbar --> 
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+
+<!-- Top bar -->
+<header class="app-header navbar">
+    <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+      	<span class="navbar-toggler-icon"></span>
+    	</button>
+    <a class="navbar-brand" href="http://www.refresco.com" target="_blank">
+      	<img class="navbar-brand-full" src="assets/logos/ruk-logo-black.jpg" width=90 height="33" alt="RUK Logo">
+      	<img class="navbar-brand-minimized" src="assets/logos/ruk-logo-black.jpg" width="30" height="10" alt="RUK Logo">       
+    	</a>
+    <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+      	<span class="navbar-toggler-icon"></span>
+    	</button>
+</header>
+
+<div class="app-body">
+
+<!-- sidebar -->
+  	<div id="mySidebar" class="sidebar">
+    	<nav class="sidebar-nav">
+      		<ul class="nav">
+        		<li class="nav-item">
+          			<a class="nav-link active" href="#" onclick=changeMainHTML(homeContent)>
+            		<i class="nav-icon fas fa-cloud-download-alt"></i>DOCNET
+          			</a>
+        		</li>
+            
+				<!-- sidebar top section-->            
+				<li class="divider"></li>
+				<li class="nav-title">Assets</li>
+
+				<!-- Factory 1 -->            
+				<li class="nav-item nav-dropdown">
+					<a class="nav-link nav-dropdown-toggle" href="#">
+						<i class="nav-icon fas fa-industry"></i>Factory&#160;1</a>
+			            	<!-- <ul class="nav-dropdown-items">
+								<li class="nav-item">
+									<a class="nav-link" href="#" onclick=changeMainHTML(x106)>
+									<i class="nav-icon fas fa-code-branch fa-list"></i> X106</a>
+									</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" onclick=changeMainHTML(x108)>
+									<i class="nav-icon fas fa-list"></i>&#160;X108</a>
+									</li>
+							</ul>
+					</li>
+					<li class="divider"></li> -->
+					
+				<!-- Factory 2 -->            
+				<li class="nav-item nav-dropdown">
+					<a class="nav-link nav-dropdown-toggle" href="#">
+						<i class="nav-icon fas fa-industry"></i>Factory&#160;2</a>
+			                <!-- <ul class="nav-dropdown-items">
+								<li class="nav-item">
+									<a class="nav-link" href="#" onclick=changeMainHTML(x201)>
+									<i class="nav-icon fas fa-list"></i>&#160;X201</a>
+									</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" onclick=changeMainHTML(x202)>
+									<i class="nav-icon fas fa-list"></i>&#160;X202</a>
+									</li>
+							</ul>
+				</li>   
+				<li class="divider"></li>             -->
+				
+				<!-- Factory 3 -->            
+				<li class="nav-item nav-dropdown">
+					<a class="nav-link nav-dropdown-toggle" href="#">
+						<i class="nav-icon fas fa-industry"></i>Factory&#160;3</a>
+							<ul class="nav-dropdown-items">
+								<li class="nav-item">
+									<a class="nav-link" href="#" onclick=changeMainHTML(x301)>
+									<i class="nav-icon fas fa-project-diagram fa-flip-horizontal"></i>X301</a>
+									</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" onclick=changeMainHTML(x304)>
+									<i class="nav-icon fas fa-project-diagram fa-flip-horizontal"></i>X304</a>
+									</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" onclick=changeMainHTML(f3process)>
+									<i class="nav-icon fas fa-database"></i>Process</a>
+									</li>
+							</ul>
+				</li>
+				<li class="divider"></li>
+
+				<!-- Global Assets -->               
+				<li class="nav-item nav-dropdown">
+					<a class="nav-link nav-dropdown-toggle" href="#">
+						<i class="nav-icon fas fa-globe"></i>Common&#160;Assets</a>
+							<ul class="nav-dropdown-items">
+								<li class="nav-item">
+									<a class="nav-link" href="#" onclick=changeMainHTML(coders)>
+									<i class="nav-icon fas fa-barcode"></i>Coders</a>
+									</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" onclick=changeMainHTML(labellers)>
+									<i class="nav-icon far fa-clone"></i>Labellers</a>
+									</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" onclick=changeMainHTML(glueApplicator)>
+									<i class="nav-icon fas fa-hot-tub"></i>Glue&#160;Applicators</a>
+									</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" onclick=changeMainHTML(palletisers)>
+									<i class="nav-icon fas fa-pallet"></i>Palletisers</a>
+									</li>  
+								<li class="nav-item">
+									<a class="nav-link" href="#" onclick=changeMainHTML(islandsAVLS)>
+									<i class="nav-icon fas fa-pallet"></i>Islands & AVLS</a>
+									</li>  
+								<li class="nav-item">
+									<a class="nav-link" href="#" onclick=changeMainHTML(spiralveyor)>
+									<i class="nav-icon fas fa-dna"></i>Spiralveyor</a>
+									</li>
+							</ul>
+				</li>
+        		<li class="divider"></li>
+      		</ul>
+    	</nav>
+			<button class="sidebar-minimizer brand-minimizer" type="button"></button>
+		</div>
+    
+		<!-- main window -->  
+	<main class="main">
+		<div id="mainContent" mainHTML="homeContent.html"></div> 
+	</main>
+
+	</div><!-- close app Body -->
+
+	<!-- Footer -->
+  	<footer class="app-footer">
+    	<div>
+      		<span>DocNet&#160;v2.0&#160;&copy;&#160;2018&#160;Refresco&#160;UK&#160;Ltd.</span>
+    	</div>
+  	</footer>
+
+  	<!-- local js libraries--> 
+	<!-- <script src="js_local/global_vs.js"></script>  -->
+	<script src="js_local/jquery-3.3.1.min.js"></script>
+	<script src="js_local/popper.min.js"></script>
+	<script src="js_local/bootstrap.min.js"></script>
+	<script src="js_local/holder.min.js"></script>
+	<script src="js_local/pace.min.js"></script>
+	<script src="js_local/perfect-scrollbar.min.js"></script>
+	<script src="js_local/coreui.min.js"></script>
+	<script src="js_local/customJS.js"></script>
+
+	<script>
+		includeHTML();
+	</script>
+
+    <!-- JavaScript CDNs -->
+	  <!-- JQuery 
+		  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	   popper JS 
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	   JS Plugins 
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	   Holder.JS 
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+		 coreUI.JS 
+      <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script> -->    
+      
+</body>
+</html>
